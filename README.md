@@ -6,20 +6,22 @@
 ## Project Walk-through:
 
 ### Assign two variables and open the file that contains the allow list in read mode
-[ ![Screenshot 2024-08-13 182733](https://github.com/user-attachments/assets/461aace2-4e0b-4554-b7fb-236b00efacb5)
+[![Screenshot 2024-08-13 182733](https://github.com/user-attachments/assets/461aace2-4e0b-4554-b7fb-236b00efacb5)
 
 For the first part of the algorithm, I opened the <b>"allow_list.txt"</b> file. First two variables were assigned. <b>"import_file"</b>, which was assigned the allow list text file, and <b>"remove_list"</b>, which was assigned the list of IP addresses to remove. To open the <b>“allow_list.txt”</b>  file, we start a with statement. <b>"with"</b> is used to open and close files properly. <b>"with"</b> keyword is used in conjuction with the <b>"open()"</b> function to open a file in different modes. The <b>open()</b> function takes in two arguments,  Imort_file which is a variable storing the allow list text file, and “r” which tells python that we want to read the file. All these information will be stored in a new variable, ‘file’, using the <b>"as"</b> keyword.]
 
 ### Read the file contents
-[![Screenshot 2024-08-13 213325](https://github.com/user-attachments/assets/bb2a1492-c057-401b-85ee-6d9f7425498d)
+[ To read the file contents, I used the <b>.read()</b> method to convert it into a string.
 
-The previous code was used to open the allow list text file in read mode ("r"). The <b>.read()</b> method converts the output of the allow list to a string data and allows me to read it .The result was stored in a variable <b>"ip_addresses"</b> .]
+![Screenshot 2024-08-13 213325](https://github.com/user-attachments/assets/bb2a1492-c057-401b-85ee-6d9f7425498d)
+
+The previous code was used to open the allow list text file in read mode ("r"). In this line, the code is written in the body of the <b>with</b> statement. I applied the <b>.read()</b> to the <b>file</b> variable identified in the <b>with</b> statement. The <b>.read()</b> method converts the output of the allow list to a string data and allows me to read it. The result was stored in a variable <b>"ip_addresses"</b> .]
 
 ### Convert the string into a list
-[ ![Screenshot 2024-08-13 213406](https://github.com/user-attachments/assets/21b0caaf-0d6f-4795-903d-d638463710b1)
+[![Screenshot 2024-08-13 213406](https://github.com/user-attachments/assets/21b0caaf-0d6f-4795-903d-d638463710b1)
 
 
-.split() is used to convert a string into a list data. The function is used after the variable that stores the string we want to convert. This new information is returned back to the ‘“ip_addresses” variable. ]
+.split() is used to convert a string into a list data. The function is applied to the <b>ip_addresses</b> variable. This new information is returned back to the ‘“ip_addresses” variable. ]
 
 ### Iterate through the remove list
 [ ![Screenshot 2024-08-13 200101](https://github.com/user-attachments/assets/229dc15c-0cb0-40d5-af9f-6a32dd23a7fb)
