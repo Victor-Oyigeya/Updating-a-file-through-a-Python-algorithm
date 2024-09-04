@@ -4,14 +4,14 @@
 ## Environment/Labs used
 - <b>Jupyter Notebook</b>
 ## Project Walk-through:
-### Assign two variables and open the file that contains the allow list for reading purposes
+### Assign two variables and open the file that contains the allow list in read mode
 [ ![Screenshot 2024-08-13 182733](https://github.com/user-attachments/assets/461aace2-4e0b-4554-b7fb-236b00efacb5)
 
-To begin the code, two variables were assigned. <b>"import_file"</b>, which was assigned the allow list text file, and <b>"remove_list"</b>, which was assigned the list of IP addresses to remove. To open the <b>“allow_list.txt”</b>  file, we start a with statement.  <b>"with"</b> keyword is used to open and close files properly. The <b>open()</b> function takes in two parameters,  Imort_file which is a variable storing the allow list text file, and “r” which tells python that we want to read the file. All these information will be stored in a new variable, ‘file’, using the as keyword.]
+For the first part of the algorithm, I opened the <b>"allow_list.txt"</b> file. First two variables were assigned. <b>"import_file"</b>, which was assigned the allow list text file, and <b>"remove_list"</b>, which was assigned the list of IP addresses to remove. To open the <b>“allow_list.txt”</b>  file, we start a with statement.  <b>"with"</b> keyword is used in conjuction with the <b>"open()"</b> function to open a file in diferent modes. <b>open()</b> function takes in two parameters,  Imort_file which is a variable storing the allow list text file, and “r” which tells python that we want to read the file. All these information will be stored in a new variable, ‘file’, using the <b>"as"</b> keyword.]
 ### Read the file contents
 [![Screenshot 2024-08-13 213325](https://github.com/user-attachments/assets/bb2a1492-c057-401b-85ee-6d9f7425498d)
 
-The previous code was used to open the allow list text file. To read the file we are going to use the .read() method. The function converts the output of the allow list to a string data. The file was read in file.read() and the result was stored in a variable ip_addresses .]
+The previous code was used to open the allow list text file. To read the file we are going to use the .read() method. The function converts the output of the allow list to a string data and the result was stored in a variable, <b>"ip_addresses"</b> .]
 ### Convert the string into a list
 [ ![Screenshot 2024-08-13 213406](https://github.com/user-attachments/assets/21b0caaf-0d6f-4795-903d-d638463710b1)
 
