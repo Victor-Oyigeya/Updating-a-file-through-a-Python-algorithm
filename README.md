@@ -21,7 +21,7 @@ The previous code was used to open the allow list text file in read mode ("r"). 
 [![Screenshot 2024-08-13 213406](https://github.com/user-attachments/assets/21b0caaf-0d6f-4795-903d-d638463710b1)
 
 
-.split() is used to convert a string into a list data. The function is applied to the <b>ip_addresses</b> variable. This new information is returned back to the ‘“ip_addresses” variable. ]
+<b>.split()</b> is used to convert a string into a list data. The purpose of splitting <b>ip_addresses</b> into a list is to make it easier to remove IP addresses from the allow list. The function is appended to the <b>ip_addresses</b> variable, which converts contents in the varaiable from a string to list data. This new information is returned back to the ‘“ip_addresses” variable. ]
 
 ### Iterate through the remove list
 [ ![Screenshot 2024-08-13 200101](https://github.com/user-attachments/assets/229dc15c-0cb0-40d5-af9f-6a32dd23a7fb)
