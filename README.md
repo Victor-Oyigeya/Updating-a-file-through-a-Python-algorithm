@@ -34,9 +34,9 @@ The <b>for</b> loop in Python repeats code for a specified sequence. The overall
 ### Remove IP addresses that are on the remove list
 [![Screenshot 2024-09-06 143046](https://github.com/user-attachments/assets/b3727780-bcff-450e-a29c-1855f2f8948b)
 
-First, within my for loop, I created a conditional that evaluated whether or not the loop variable element was found in the ip_addresses list. I did this because applying .remove() to elements that were not found in ip_addresses would result in an error. 
+First, within my <b>for</b> loop, I created a conditional that evaluated whether or not the loop variable <b>"element"</b> was found in the <b>ip_addresses</b> list. I did this because applying </b>.remove()</b> to elements that were not found in <b>ip_addresses</b> would result in an error. 
 
-In the next line of code within the conditional statement, the .remove() method is applied to ip_addresses and element is passed in as an argument in the function to delete the elements on the remove list from the list of approved IP addresses.
+In the next line of code within the conditional statement, the <b>.remove()</b> method is applied to <b>ip_addresses</b> and element is passed in as an argument in the function to delete the elements on the remove list from the list of approved IP addresses.
 
 ### Update the file with the revised list of IP addresses 
 As a final step in my algorithm, I needed to update the allow list file with the revised list of IP addresses. To do so, I first needed to convert the list back into a string. I used the .join() method for this:
