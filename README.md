@@ -1,6 +1,6 @@
 # Updating a file through a Python algorithm
 ## Project description
-[Updating the list of IP addresses that are allowed to access restricted content. There are some IP addresses that are on the approved list that are not allowed to access restricted content. We are given a list of IP addresses that are not supposed to be on the list, so we used that information to remove them. ]
+[Updating the list of IP addresses that are allowed to access restricted content. There are some IP addresses that are on the approved list that are not allowed to access restricted content. We are given a list of restricted IP addresses, so we used that information to remove them. ]
 ## Environment/Labs used
 - <b>Jupyter Notebook</b>
 ## Project Walk-through:
