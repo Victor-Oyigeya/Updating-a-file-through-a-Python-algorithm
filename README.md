@@ -29,22 +29,22 @@ A key part of my algorithm involves iterating through the IP addresses that are 
 
 [![Screenshot 2024-09-06 142811](https://github.com/user-attachments/assets/92cfb62e-1d1a-43ab-aa84-7dd029b1cda5)
 
-The <b>for</b> loop in Python repeats code for a specified sequence. The overall purpose of the for loop in a Python algorithm like this is to apply specific code statements to all elements in a sequence. The <b>"for"</b> keyword starts the for loop. It is followed by the loop variable <b>"element"</b> and the keyword <b>"in"</b>. The keyword <b>"in"</b> indicates to iterate through the sequence <b>"ip_addresses"</b> and assign each value to the loop variable <b>"element"</b>.]
+The <b>for</b> loop in Python repeats code for a specified sequence. The overall purpose of the for loop in a Python algorithm like this is to apply specific code statements to all elements in a sequence. The <b>"for"</b> keyword starts the for loop. It is followed by the loop variable <b>"element"</b> and the keyword <b>"in"</b>. The keyword <b>"in"</b> indicates to iterate through the sequence <b>"remove_list"</b> and assign each value to the loop variable <b>"element"</b>.]
 
 ### Remove IP addresses that are on the remove list
 [![Screenshot 2024-09-06 143046](https://github.com/user-attachments/assets/b3727780-bcff-450e-a29c-1855f2f8948b)
 
 First, within my <b>for</b> loop, I created a conditional that evaluated whether or not the loop variable <b>"element"</b> was found in the <b>ip_addresses</b> list. I did this because applying </b>.remove()</b> to elements that were not found in <b>ip_addresses</b> would result in an error. 
 
-In the next line of code within the conditional statement, the <b>.remove()</b> method is applied to <b>ip_addresses</b> and element is passed in as an argument in the function to delete the elements on the remove list from the list of approved IP addresses.
+In the next line of code within the conditional statement, the <b>.remove()</b> method is applied to <b>ip_addresses</b> and the variable, <b>element</b>, is passed in as an argument in the function to delete the elements on the remove list from the list of approved IP addresses.
 
 ### Update the file with the revised list of IP addresses 
-As a final step in my algorithm, I needed to update the allow list file with the revised list of IP addresses. To do so, I first needed to convert the list back into a string. I used the .join() method for this:
+As a final step in my algorithm, I needed to update the allow list file with the revised list of IP addresses. To do so, I first needed to convert the list back into a string. I used the <b>.join()</b> method for this:
 
 [![Screenshot 2024-09-06 141648](https://github.com/user-attachments/assets/b628065d-4379-4ed2-b82c-50996fc7eac7)
 
 
-The .join() method combines all items in an iterable into a string. The .join() method is applied to a string containing characters that will separate the elements in the iterable once joined into a string. In this algorithm, I used the .join() method to create a string from the list ip_addresses so that I could pass it in as an argument to the .write() method when writing to the file "allow_list.txt". I used the string ("\n") as the separator to instruct Python to place each element on a new line. 
+The <b>.join()</b> method combines all items in an iterable into a string. The <b>.join()</b> method is applied to a list containing characters that will separate the elements in the iterable once joined into a string. In this algorithm, I used the <b>.join()</b> method to create a string from the list <b>ip_addresses</b> so that I could pass it in as an argument to the <b>.write()</b> method when writing to the file <b>"allow_list.txt"</b>. I used the string ("\n") as the separator to instruct Python to place each element on a new line. 
 
 Then, I used another with statement and the .write() method to update the file:
   
